@@ -33,14 +33,14 @@
     </div>
 
     <div class="card">
-      <img src="img/GORDO.jpg">
-      <h3>GORDO</h3>
+      <img src="img/ATLÉTICO.jpg">
+      <h3>ATLÉTICO</h3>
       <button onclick="votar(4)">VOTAR</button>
     </div>
 
     <div class="card">
-      <img src="img/ATLÉTICO.jpg">
-      <h3>ATLÉTICO</h3>
+      <img src="img/GORDO.jpg">
+      <h3>GORDO</h3>
       <button onclick="votar(5)">VOTAR</button>
     </div>
 
@@ -51,41 +51,67 @@
     </div>
   </section>
 
-  <section class="resultado">
-    <h2>📊 Resultado em tempo real</h2>
+  <div class="resultado-flex">
+<section class="resultado">
+  <h2>📊 Resultado em tempo real</h2>
 
-    <!-- GRÁFICO -->
+  <div class="resultado-flex">
+
+    <!-- TABELA À ESQUERDA -->
+    <div class="tabela-votos">
+      <table>
+        <thead>
+          <tr>
+            <th>Corpo</th>
+            <th>Votos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>MAGRO</td><td id="v1">0</td></tr>
+          <tr><td>MAGRA</td><td id="v2">0</td></tr>
+          <tr><td>GORDA</td><td id="v3">0</td></tr>
+          <tr><td>GORDO</td><td id="v4">0</td></tr>
+          <tr><td>ATLÉTICO</td><td id="v5">0</td></tr>
+          <tr><td>ATLÉTICA</td><td id="v6">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- GRÁFICO À DIREITA -->
     <div class="grafico">
-  <div class="barra-container">
-    <span id="pct1" class="porcentagem">0%</span>
-    <div id="bar1" class="barra"></div>
-  </div>
+      <div class="barra-container">
+        <span id="pct1" class="porcentagem">0%</span>
+        <div id="bar1" class="barra"></div>
+      </div>
 
-  <div class="barra-container">
-    <span id="pct2" class="porcentagem">0%</span>
-    <div id="bar2" class="barra"></div>
-  </div>
+      <div class="barra-container">
+        <span id="pct2" class="porcentagem">0%</span>
+        <div id="bar2" class="barra"></div>
+      </div>
 
-  <div class="barra-container">
-    <span id="pct3" class="porcentagem">0%</span>
-    <div id="bar3" class="barra"></div>
-  </div>
+      <div class="barra-container">
+        <span id="pct3" class="porcentagem">0%</span>
+        <div id="bar3" class="barra"></div>
+      </div>
 
-  <div class="barra-container">
-    <span id="pct4" class="porcentagem">0%</span>
-    <div id="bar4" class="barra"></div>
-  </div>
+      <div class="barra-container">
+        <span id="pct4" class="porcentagem">0%</span>
+        <div id="bar4" class="barra"></div>
+      </div>
 
-  <div class="barra-container">
-    <span id="pct5" class="porcentagem">0%</span>
-    <div id="bar5" class="barra"></div>
-  </div>
+      <div class="barra-container">
+        <span id="pct5" class="porcentagem">0%</span>
+        <div id="bar5" class="barra"></div>
+      </div>
 
-  <div class="barra-container">
-    <span id="pct6" class="porcentagem">0%</span>
-    <div id="bar6" class="barra"></div>
+      <div class="barra-container">
+        <span id="pct6" class="porcentagem">0%</span>
+        <div id="bar6" class="barra"></div>
+      </div>
+    </div>
+
   </div>
-</div>
+</section>
 <script src="script.js"></script>
 </body>
 </html>

@@ -171,15 +171,6 @@ header p {
   align-items: center;
 }
 
-.tabela-votos {
-  width: 100%;
-  max-width: 420px;
-  border-collapse: collapse;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,.15);
-}
-
 .tabela-votos h3 {
   margin-bottom: 15px;
   color: #0f2027;
@@ -210,4 +201,57 @@ header p {
 
 .tabela-votos tr:nth-child(even) td {
   background: #ececec;
+}
+.resultado-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+/* TABELA */
+.tabela-votos table {
+  width: 260px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.tabela-votos th {
+  background: #2c5364;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.tabela-votos td {
+  padding: 10px;
+  text-align: center;
+  background: #f7f7f7;
+  font-weight: 500;
+}
+
+.tabela-votos tr:nth-child(even) td {
+  background: #eaeaea;
+}
+.resultado-flex {
+  display: flex;
+  justify-content: flex-start; /* empurra tudo pra esquerda */
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 20px;
+}
+.resultado h2 {
+  text-align: center;
+}
+.resultado {
+  width: 100%;
+}
+
+.resultado h2 {
+  width: 100%;
+  text-align: center !important;
+  margin-bottom: 20px;
 }

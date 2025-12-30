@@ -1,11 +1,11 @@
 // Nomes dos candidatos
 let nomes = [
-  "Magrinho",
-  "Magrinha",
-  "Gordinha",
-  "Gordinho",
-  "Atlético",
-  "Atlética"
+  "MAGRO",
+  "MAGRA",
+  "GORDA",
+  "GORDO",
+  "ATLÉTICO",
+  "ATLÉTICA"
 ];
 
 // Array de votos (6 candidatos)
@@ -26,8 +26,11 @@ function atualizar() {
     let barra = document.getElementById(`bar${i + 1}`);
     let pct = document.getElementById(`pct${i + 1}`);
 
-    // Se não existir barra ou porcentagem, pula
     if (!barra || !pct) continue;
+
+    // atualiza tabela SE existir
+    let votoTd = document.getElementById(`v${i + 1}`);
+    if (votoTd) votoTd.innerText = votos[i];
 
     if (total === 0) {
       barra.style.height = "0px";
