@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Urna Eletrônica - Simulação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>💪 Qual seu corpo perfeito?</h1>
+    <p>O Corpo dos sonhos</p>
+  </header>
+
+  <section class="candidatos">
+    <div class="card">
+      <img src="img/Magrinho.jpg">
+      <h3>Magrinho</h3>
+      <button onclick="votar(1)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/Magrinha.jpg">
+      <h3>Magrinha</h3>
+      <button onclick="votar(2)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/Gordinha.jpg">
+      <h3>Gordinha</h3>
+      <button onclick="votar(3)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/Gordinho.jpg">
+      <h3>Gordinho</h3>
+      <button onclick="votar(4)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/Atlético.jpg">
+      <h3>Atlético</h3>
+      <button onclick="votar(5)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/Atlética.jpg">
+      <h3>Atlética</h3>
+      <button onclick="votar(6)">VOTAR</button>
+    </div>
+  </section>
+
+  <section class="resultado">
+    <h2>📊 Resultado em tempo real</h2>
+
+    <!-- GRÁFICO -->
+    <div class="grafico">
+  <div class="barra-container">
+    <span id="pct1" class="porcentagem">0%</span>
+    <div id="bar1" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct2" class="porcentagem">0%</span>
+    <div id="bar2" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct3" class="porcentagem">0%</span>
+    <div id="bar3" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct4" class="porcentagem">0%</span>
+    <div id="bar4" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct5" class="porcentagem">0%</span>
+    <div id="bar5" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct6" class="porcentagem">0%</span>
+    <div id="bar6" class="barra"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
